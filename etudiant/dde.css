@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #373A40;
+}
+
+.custom-navbar {
+    background-color: #373A40; /* Change to your desired background color */
+    width: 100%;
+    padding-left: 20px; /* Add some padding to the left */
+    padding-right: 20px; /* Add some padding to the right */
+    height: 10vh; /* Adjust the navbar height */
+    display: flex;
+    align-items: center;
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+    color: #FFFFFF; /* Change to your desired text color */
+}
+
+.custom-navbar .nav-link:hover {
+    color: #373A40; /* Change to your desired hover text color */
+}
+
+.navbar-nav.ms-auto {
+    margin-left: auto;
+    margin-right: 20px; /* Add some margin on the right */
+}
+
+.navbar-nav .nav-item {
+    margin-left: 10px; /* Add space between nav items */
+}
+
+.navbar-toggler {
+    margin-left: auto;
+}
+
+/* Main content */
+.main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #373A40;
+    align-items: flex-start; /* Start aligning items from the top */
+    color: rgb(201, 201, 201);
+    padding: 20px;
+    overflow-y: auto; /* Allow scrolling for long content */
+}
+
+.west {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;    background-color: #373A40;
+
+    width: 100%;
+    margin-right: 10%;
+}
+
+.page {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #393E46;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-y: auto; /* Enable scrolling */
+}
+
+.entete-list h1 {
+    color: white;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    background-color: #373A40;
+    color: white;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody img {
+    border-radius: 15%;
+    box-shadow: 
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.008),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.012),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.015),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.018),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.022),
+        100px 100px 80px rgba(0, 0, 0, 0.03);
+}
+
+tbody {
+    color: white;
+}
+
+button, .btn {
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-nav.ms-auto {
+        margin-right: 10px;
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 5px;
+    }
+
+    .main {
+        padding: 10px;
+    }
+
+    .page {
+        padding: 10px;
+    }
+}
